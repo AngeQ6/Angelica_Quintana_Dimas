@@ -1,4 +1,3 @@
-// src/components/AdviceCard.jsx
 import React, { useState } from 'react';
 import './AdviceCard.css';
 import useFetch from '../Hooks/UseFetch'; 
