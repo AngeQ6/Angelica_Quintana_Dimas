@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: hsl(218, 23%, 16%); 
+  font-family: 'Manrope', sans-serif; 
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.advice-card {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  max-width: 540px;
+  width: 100%;
+}
+
+.advice-id {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: hsl(150, 100%, 66%); 
+  margin-bottom: 20px;
+}
+
+.advice-text {
+  font-size: 28px; 
+  color: hsl(193, 38%, 86%); 
+  margin-bottom: 30px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2px;
+  background-color: #4f5d74;
+  position: relative;
+  margin: 20px 0;
+}
+
+.divider-content {
+  width: 10px;
+  height: 10px;
+  background-color: #cee3e9;
+  border-radius: 50%;
+}
+
+.dice-button {
+  background-color: hsl(150, 100%, 66%); 
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dice-button:hover {
+  box-shadow:0 0 1.5em 0.25em hsl(150, 100%, 66%);
+}
+
+.dice-button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.figure-card {
+  display: block;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 1rem; 
+} 
+
+/* Mostrar la imagen de escritorio por defecto */
+.figure-card-image--desktop {
+  display: block;
+}
+
+/* Ocultar la imagen de móvil por defecto */
+.figure-card-image--mobile {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .figure-card-image--desktop {
+      display: block;
+      width: 100%; 
+  }
+
+  .figure-card-image--mobile {
+      display: none;
+  }
+
+}
+
+@media (max-width: 1440px) {
+  .figure-card-image--desktop  {
+      display: none;
+  }
+
+  .figure-card-image--mobile {
+      display: block;
+      width: 100%;
+  }
+
+}
