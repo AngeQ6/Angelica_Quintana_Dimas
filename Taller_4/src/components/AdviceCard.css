@@ -88,12 +88,12 @@ html, body {
   margin-bottom: 1rem; 
 } 
 
-/* Mostrar la imagen de escritorio por defecto */
+
 .figure-card-image--desktop {
   display: block;
 }
 
-/* Ocultar la imagen de móvil por defecto */
+
 .figure-card-image--mobile {
   display: none;
 }
